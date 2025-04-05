@@ -70,8 +70,6 @@ KitchenSync
 
 ![image](https://github.com/user-attachments/assets/7e374fd2-aee9-4f84-9bcd-14a334800fe5)
 
-![image](https://github.com/user-attachments/assets/41b37b77-edd1-4b57-a3e4-e0ac0554654c)
-
 ![image](https://github.com/user-attachments/assets/76222a2e-1bdf-4a8e-8cb2-42c9962fb263)
 
 ![image](https://github.com/user-attachments/assets/146b43ec-1e8b-43c4-99bf-d2123bfb3935)

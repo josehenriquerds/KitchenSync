@@ -124,12 +124,8 @@ A interface estará disponível em: `http://localhost:3000`
 ## 🤝 Autor
 
 **José Henrique**  
-👨‍💻 Engenheiro da Computação, apaixonado por boas arquiteturas, performance e experiências de usuário envolventes.
-
-📫 Email: josehenrique.dev@gmail.com  
-🌐 LinkedIn: [linkedin.com/in/jose-henrique](https://linkedin.com/in/jose-henrique)  
-📂 Portfólio (em breve)
-
+👨‍💻 Engenheiro da Computação, pós graduado em Arquitetura de software.
+=
 ---
 
-> Feito com ❤️, código limpo e muito café ☕
+> Ocellaris

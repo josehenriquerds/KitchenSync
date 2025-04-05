@@ -119,11 +119,4 @@ A interface estará disponível em: `http://localhost:3000`
 
 ---
 
-## 🤝 Autor
-
-**José Henrique**  
-👨‍💻 Engenheiro da Computação, pós graduado em Arquitetura de software.
-=
----
-
 > Ocellaris

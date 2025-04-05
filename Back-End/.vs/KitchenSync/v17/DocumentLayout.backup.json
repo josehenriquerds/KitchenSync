@@ -1,0 +1,355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.application\\dtos\\criarpedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|solutionrelative:src\\kitchensync.application\\dtos\\criarpedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.application\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|solutionrelative:src\\kitchensync.application\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\migrations\\kitchensyncdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\migrations\\kitchensyncdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\migrations\\20250405034930_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\migrations\\20250405034930_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\kitchensync.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\kitchensync.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|solutionrelative:src\\kitchensync.domain\\entities\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\data\\kitchensyncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\data\\kitchensyncdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.domain\\enums\\statuspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|solutionrelative:src\\kitchensync.domain\\enums\\statuspedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.application\\interfaces\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|src\\KitchenSync.Application\\KitchenSync.Application.csproj|solutionrelative:src\\kitchensync.application\\interfaces\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|solutionrelative:src\\kitchensync.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.domain\\enums\\prioridadepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|src\\KitchenSync.Domain\\KitchenSync.Domain.csproj|solutionrelative:src\\kitchensync.domain\\enums\\prioridadepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\hubs\\pedidohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\hubs\\pedidohub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\KitchenSync.API\\KitchenSync.API.csproj|solutionrelative:src\\kitchensync.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|c:\\users\\npc tech\\downloads\\nova pasta\\kitchensync_backend_improved\\kitchensync\\src\\kitchensync.infrastructure\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj|solutionrelative:src\\kitchensync.infrastructure\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CriarPedidoDto.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\DTOS\\CriarPedidoDto.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Application\\DTOS\\CriarPedidoDto.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\DTOS\\CriarPedidoDto.cs*",
+              "RelativeToolTip": "src\\KitchenSync.Application\\DTOS\\CriarPedidoDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:12:13.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KitchenSyncDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Migrations\\KitchenSyncDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\Migrations\\KitchenSyncDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Migrations\\KitchenSyncDbContextModelSnapshot.cs",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\Migrations\\KitchenSyncDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAvwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T03:54:24.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Entities\\Pedido.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Domain\\Entities\\Pedido.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Entities\\Pedido.cs",
+              "RelativeToolTip": "src\\KitchenSync.Domain\\Entities\\Pedido.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:36:11.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PedidoDto.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\DTOS\\PedidoDto.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Application\\DTOS\\PedidoDto.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\DTOS\\PedidoDto.cs",
+              "RelativeToolTip": "src\\KitchenSync.Application\\DTOS\\PedidoDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:35:15.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Controllers\\PedidoController.cs*",
+              "RelativeToolTip": "src\\KitchenSync.API\\Controllers\\PedidoController.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwCQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:52:19.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\appsettings.json",
+              "RelativeToolTip": "src\\KitchenSync.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-05T03:45:45.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250405034930_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Migrations\\20250405034930_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\Migrations\\20250405034930_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Migrations\\20250405034930_InitialCreate.Designer.cs",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\Migrations\\20250405034930_InitialCreate.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAvwCYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T03:53:32.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Startup.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Startup.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Startup.cs",
+              "RelativeToolTip": "src\\KitchenSync.API\\Startup.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:51:23.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StatusPedido.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Enums\\StatusPedido.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Domain\\Enums\\StatusPedido.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Enums\\StatusPedido.cs",
+              "RelativeToolTip": "src\\KitchenSync.Domain\\Enums\\StatusPedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:48:45.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Domain\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Entities\\Produto.cs",
+              "RelativeToolTip": "src\\KitchenSync.Domain\\Entities\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:44:01.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Program.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Program.cs",
+              "RelativeToolTip": "src\\KitchenSync.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T03:18:38.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KitchenSync.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\KitchenSync.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-04T04:37:35.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KitchenSyncDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Data\\KitchenSyncDbContext.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\Data\\KitchenSyncDbContext.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Data\\KitchenSyncDbContext.cs",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\Data\\KitchenSyncDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:36:18.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\Interfaces\\IProdutoRepository.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Application\\Interfaces\\IProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Application\\Interfaces\\IProdutoRepository.cs",
+              "RelativeToolTip": "src\\KitchenSync.Application\\Interfaces\\IProdutoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:54:27.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "src\\KitchenSync.API\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAD4v0YAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:49:17.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:54:59.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PrioridadePedido.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Enums\\PrioridadePedido.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Domain\\Enums\\PrioridadePedido.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Domain\\Enums\\PrioridadePedido.cs",
+              "RelativeToolTip": "src\\KitchenSync.Domain\\Enums\\PrioridadePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:48:29.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PedidoHub.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Hubs\\PedidoHub.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Hubs\\PedidoHub.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Hubs\\PedidoHub.cs",
+              "RelativeToolTip": "src\\KitchenSync.API\\Hubs\\PedidoHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:53:30.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\KitchenSync.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\KitchenSync.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T05:09:28.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Repositories\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "src\\KitchenSync.Infrastructure\\Repositories\\PedidoRepository.cs",
+              "ToolTip": "C:\\Users\\NPC TECH\\Downloads\\Nova pasta\\kitchensync_backend_improved\\KitchenSync\\src\\KitchenSync.Infrastructure\\Repositories\\PedidoRepository.cs",
+              "RelativeToolTip": "src\\KitchenSync.Infrastructure\\Repositories\\PedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:35:18.212Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

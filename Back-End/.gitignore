@@ -1,0 +1,43 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# Rider / VS Code / Visual Studio config
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Secrets and environment
+.env
+secrets.json
+Secrets/
+
+# EF Core
+Migrations/*Snapshot.cs
+
+# Database files
+*.mdf
+*.ldf
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if mixed project)
+node_modules/
+
+# Test coverage
+coverage/
+
+# Others
+*.vspscc
+*.vssscc
+_ReSharper*/

@@ -84,10 +84,20 @@ KitchenSync
 
 ## 📸 Demonstração Visual
 
-![demo1](https://github.com/user-attachments/assets/47c44f51-bad5-44d8-8325-3680a814202c)
-![demo2](https://github.com/user-attachments/assets/7e374fd2-aee9-4f84-9bcd-14a334800fe5)
-![demo3](https://github.com/user-attachments/assets/76222a2e-1bdf-4a8e-8cb2-42c9962fb263)
-![demo4](https://github.com/user-attachments/assets/146b43ec-1e8b-43c4-99bf-d2123bfb3935)
+![image](https://github.com/user-attachments/assets/2bedfcc3-a127-4ae9-9590-2c2518b0640f)
+![image](https://github.com/user-attachments/assets/039cdffb-8e69-4d4a-840f-1a8fae7d99a6)
+![image](https://github.com/user-attachments/assets/984a55fb-113f-42f2-b601-554399eafeb5)
+![image](https://github.com/user-attachments/assets/cd1c18d0-797f-4456-9481-6b04df1a8eef)
+![image](https://github.com/user-attachments/assets/32806ab9-c858-4409-a6b9-cb7862311dc9)
+![image](https://github.com/user-attachments/assets/3db7e12f-be81-473f-9112-9167d2963e2b)
+
+## 📸 Demonstração Visual - Mobile
+![image](https://github.com/user-attachments/assets/4b48de2b-7658-4ef0-860f-569544433914)
+![image](https://github.com/user-attachments/assets/701a1818-c118-478c-a513-bfc5d6318870)
+![image](https://github.com/user-attachments/assets/f167cbd0-5f7a-4491-9bc6-270d8d37b6da)
+![image](https://github.com/user-attachments/assets/33ddcb74-63c7-476f-87bc-ca69d5382132)
+
+
 
 ---
 

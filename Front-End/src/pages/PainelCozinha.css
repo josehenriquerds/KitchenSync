@@ -1,0 +1,27 @@
+.tela-destaque {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fundoPisca 1s infinite;
+  }
+  
+  .texto-destaque {
+    font-size: 16rem;
+    font-weight: bold;
+    animation: textoPisca 1s infinite;
+  }
+  
+  @keyframes fundoPisca {
+    0%, 100% { background-color: black; }
+    50% { background-color: white; }
+  }
+  
+  @keyframes textoPisca {
+    0%, 100% { color: white; }
+    50% { color: black; }
+  }
+  

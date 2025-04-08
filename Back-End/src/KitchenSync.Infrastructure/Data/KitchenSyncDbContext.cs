@@ -9,5 +9,6 @@ namespace KitchenSync.Infrastructure.Data
 
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<PedidoAnalitico> PedidosAnaliticos { get; set; }
     }
 }

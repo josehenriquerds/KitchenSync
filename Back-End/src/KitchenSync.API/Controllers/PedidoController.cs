@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using KitchenSync.Application.UseCases;
-using KitchenSync.Domain.Entities;
-using KitchenSync.API.Hubs;
-using Microsoft.AspNetCore.SignalR;
+﻿using KitchenSync.API.Hubs;
 using KitchenSync.Application.DTOs;
-using KitchenSync.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
 using KitchenSync.Application.DTOS;
+using KitchenSync.Domain.Entities;
+using KitchenSync.Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace KitchenSync.API.Controllers
 {
@@ -14,7 +12,6 @@ namespace KitchenSync.API.Controllers
     [Route("api/[controller]")]
     public class PedidoController : ControllerBase
     {
-        private readonly CriarPedidoHandler _handler;
         private readonly IHubContext<PedidoHub> _hubContext;
         private readonly KitchenSyncDbContext _context;
 
@@ -22,7 +19,6 @@ namespace KitchenSync.API.Controllers
             IHubContext<PedidoHub> hubContext,
             KitchenSyncDbContext context)
         {
-            _handler = new CriarPedidoHandler();
             _hubContext = hubContext;
             _context = context;
         }
@@ -34,6 +30,7 @@ namespace KitchenSync.API.Controllers
             if (produto == null)
                 return NotFound("Produto não encontrado.");
 
+            // Monta e envia o pedido ao painel da cozinha via SignalR
             var pedido = new Pedido
             {
                 Produto = produto,
@@ -42,29 +39,44 @@ namespace KitchenSync.API.Controllers
                 DataHoraSolicitacao = DateTime.Now,
                 TempoRestante = produto.TempoPreparo * 60,
                 Prioridade = dto.Prioridade,
-                Status = 0 // ou StatusPedido.Pendente
+                Status = 0
             };
-
-            _context.Pedidos.Add(pedido);
-            await _context.SaveChangesAsync();
 
             var retorno = PedidoDto.FromEntity(pedido);
             await _hubContext.Clients.All.SendAsync("NovoPedido", retorno);
 
-            return CreatedAtAction(nameof(CriarPedido), new { id = pedido.Id }, retorno);
+            // Registra pedido analítico no banco
+            var analitico = new PedidoAnalitico
+            {
+                ProdutoId = produto.Id,
+                Quantidade = dto.Quantidade,
+                DataHora = DateTime.UtcNow
+            };
+
+            _context.PedidosAnaliticos.Add(analitico);
+            await _context.SaveChangesAsync();
+
+            return Ok(retorno);
+        }
+
+        [HttpPost("concluir")]
+        public async Task<IActionResult> ConcluirPedido([FromBody] ConcluirPedidoDto dto)
+        {
+            Console.WriteLine($"[DEBUG] dto recebido: {System.Text.Json.JsonSerializer.Serialize(dto)}");
+            Console.WriteLine($"[API] PedidoConcluido via REST - produtoId={dto.ProdutoId}");
+
+            await _hubContext.Clients.All.SendAsync("LiberarProduto", dto.ProdutoId);
+            return Ok();
         }
 
 
-        // ✅ Novo endpoint GET
+
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PedidoDto>>> GetPedidos()
         {
-            var pedidos = await _context.Pedidos
-                .Include(p => p.Produto)
-                .ToListAsync();
-
-            var dtos = pedidos.Select(PedidoDto.FromEntity).ToList();
-            return Ok(dtos);
+            // Endpoint opcional para manter compatibilidade
+            return Ok(new List<PedidoDto>());
         }
     }
 }

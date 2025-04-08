@@ -8,6 +8,5 @@
         public int TempoPreparo { get; set; }  
         public string Categoria { get; set; }
         public bool Disponivel { get; set; }
-
     }
 }

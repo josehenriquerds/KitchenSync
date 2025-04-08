@@ -7,6 +7,7 @@ namespace KitchenSync.Application.DTOs
     {
         public int Id { get; set; }
         public string Item { get; set; }
+        public int ProdutoId { get; set; }
         public int Quantidade { get; set; }
         public string Solicitante { get; set; }
         public string Prioridade { get; set; }
@@ -18,6 +19,7 @@ namespace KitchenSync.Application.DTOs
             return new PedidoDto
             {
                 Id = pedido.Id,
+                ProdutoId = pedido.Produto?.Id ?? 0, // ✅ Pega direto do Produto
                 Item = pedido.Produto?.Nome ?? "Desconhecido",
                 Quantidade = pedido.Quantidade,
                 Solicitante = pedido.Solicitante,
@@ -27,6 +29,5 @@ namespace KitchenSync.Application.DTOs
                 DataHoraSolicitacao = pedido.DataHoraSolicitacao
             };
         }
-
     }
 }

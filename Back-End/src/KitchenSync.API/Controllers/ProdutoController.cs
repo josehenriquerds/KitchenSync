@@ -19,21 +19,23 @@ namespace KitchenSync.API.Controllers
 
         // Rota para cadastrar um novo produto
         [HttpPost]
-        public async Task<ActionResult<Produto>> CadastrarProduto(Produto produto)
+        public async Task<ActionResult> CadastrarProdutos([FromBody] List<Produto> produtos)
         {
-            // Validação simples
-            if (string.IsNullOrEmpty(produto.Nome) || produto.TempoPreparo <= 0)
+            if (produtos == null || produtos.Count == 0)
+                return BadRequest("Nenhum produto recebido.");
+
+            foreach (var produto in produtos)
             {
-                return BadRequest("Nome do produto e tempo de preparo são obrigatórios.");
+                if (string.IsNullOrEmpty(produto.Nome) || produto.TempoPreparo <= 0)
+                    return BadRequest("Todos os produtos devem ter nome e tempo de preparo.");
             }
 
-            // Adiciona o produto ao banco de dados
-            _context.Produtos.Add(produto);
+            _context.Produtos.AddRange(produtos);
             await _context.SaveChangesAsync();
 
-            // Retorna o produto recém-cadastrado com status 201
-            return CreatedAtAction("GetProduto", new { id = produto.Id }, produto);
+            return Ok(produtos);
         }
+
 
         // Rota para obter um produto específico por ID
         [HttpGet("{id}")]
@@ -84,6 +86,22 @@ namespace KitchenSync.API.Controllers
 
             return NoContent();
         }
+
+        // Rota para deletar um produto pelo ID
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletarProduto(int id)
+        {
+            var produto = await _context.Produtos.FindAsync(id);
+
+            if (produto == null)
+                return NotFound("Produto não encontrado.");
+
+            _context.Produtos.Remove(produto);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Produto excluído com sucesso." });
+        }
+
 
         // Verifica se o produto existe no banco
         private bool ProdutoExists(int id)

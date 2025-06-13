@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kitchensync-api
+    runtime: dotnet
+    plan: free
+    buildCommand: dotnet build KitchenSync.API
+    startCommand: bash -c "dotnet ef database update --project KitchenSync.Infrastructure && dotnet run --project KitchenSync.API"
+    envVars:
+      - key: ASPNETCORE_URLS
+        value: http://0.0.0.0:10000
+      - key: ConnectionStrings__DefaultConnection
+        value: "SUA_STRING_SQLSERVER"

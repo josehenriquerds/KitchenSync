@@ -1,6 +1,5 @@
-﻿using KitchenSync.API.Hubs;
-using KitchenSync.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+using KitchenSync.API.Hubs;
+using KitchenSync.API.Services;
 using Microsoft.OpenApi.Models;
 
 namespace KitchenSync.API
@@ -16,12 +15,10 @@ namespace KitchenSync.API
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // 🔹 Adiciona o DbContext
-            services.AddDbContext<KitchenSyncDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddControllers();
             services.AddEndpointsApiExplorer();
+            services.AddSingleton<ProdutoFileService>();
+            services.AddSingleton<PedidoInMemoryService>();
 
             // 🔹 Configura o CORS para permitir requisições do frontend
             services.AddCors(options =>

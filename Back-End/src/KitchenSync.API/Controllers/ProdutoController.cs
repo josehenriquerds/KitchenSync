@@ -1,7 +1,6 @@
-﻿using KitchenSync.Domain.Entities;
-using KitchenSync.Infrastructure.Data;
+using KitchenSync.Domain.Entities;
+using KitchenSync.API.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace KitchenSync.API.Controllers
 {
@@ -9,17 +8,16 @@ namespace KitchenSync.API.Controllers
     [ApiController]
     public class ProdutoController : ControllerBase
     {
-        private readonly KitchenSyncDbContext _context;
+        private readonly ProdutoFileService _service;
 
-        // Injeção de dependência do contexto de banco de dados
-        public ProdutoController(KitchenSyncDbContext context)
+        public ProdutoController(ProdutoFileService service)
         {
-            _context = context;
+            _service = service;
         }
 
         // Rota para cadastrar um novo produto
         [HttpPost]
-        public async Task<ActionResult> CadastrarProdutos([FromBody] List<Produto> produtos)
+        public ActionResult CadastrarProdutos([FromBody] List<Produto> produtos)
         {
             if (produtos == null || produtos.Count == 0)
                 return BadRequest("Nenhum produto recebido.");
@@ -30,18 +28,16 @@ namespace KitchenSync.API.Controllers
                     return BadRequest("Todos os produtos devem ter nome e tempo de preparo.");
             }
 
-            _context.Produtos.AddRange(produtos);
-            await _context.SaveChangesAsync();
-
+            _service.AddRange(produtos);
             return Ok(produtos);
         }
 
 
         // Rota para obter um produto específico por ID
         [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> GetProduto(int id)
+        public ActionResult<Produto> GetProduto(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = _service.GetById(id);
 
             if (produto == null)
             {
@@ -53,51 +49,33 @@ namespace KitchenSync.API.Controllers
 
         // Rota para obter todos os produtos cadastrados (opcional)
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
+        public ActionResult<IEnumerable<Produto>> GetProdutos()
         {
-            return await _context.Produtos.ToListAsync();
+            return Ok(_service.GetAll());
         }
 
         // Rota para atualizar um produto (opcional)
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduto(int id, Produto produto)
+        public IActionResult PutProduto(int id, Produto produto)
         {
             if (id != produto.Id)
             {
                 return BadRequest();
             }
-
-            _context.Entry(produto).State = EntityState.Modified;
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProdutoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            _service.Update(produto);
             return NoContent();
         }
 
         // Rota para deletar um produto pelo ID
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletarProduto(int id)
+        public IActionResult DeletarProduto(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = _service.GetById(id);
 
             if (produto == null)
                 return NotFound("Produto não encontrado.");
 
-            _context.Produtos.Remove(produto);
-            await _context.SaveChangesAsync();
+            _service.Remove(id);
 
             return Ok(new { message = "Produto excluído com sucesso." });
         }
@@ -106,7 +84,7 @@ namespace KitchenSync.API.Controllers
         // Verifica se o produto existe no banco
         private bool ProdutoExists(int id)
         {
-            return _context.Produtos.Any(e => e.Id == id);
+            return _service.GetById(id) != null;
         }
     }
 }

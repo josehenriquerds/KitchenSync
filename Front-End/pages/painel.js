@@ -4,8 +4,7 @@ import { HubConnectionBuilder } from '@microsoft/signalr';
 import PedidoCard from '../components/PedidoCard';
 import { motion } from 'framer-motion';
 import { FaFish, FaArrowLeft } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import './PainelCozinha.css';
+import { useRouter } from 'next/router';
 
 const gerarIdUnico = () => crypto?.randomUUID?.() ?? Math.floor(Math.random() * 1e9);
 
@@ -14,7 +13,7 @@ function PainelCozinha() {
   const [destaque, setDestaque] = useState(null);
   const connectionRef = useRef(null);
   const audio = useRef(null);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const prioridadeTexto = {
     1: 'Alta',
@@ -132,7 +131,7 @@ function PainelCozinha() {
             <Button
               variant="light"
               className="d-flex align-items-center"
-              onClick={() => navigate('/')}
+              onClick={() => router.push('/')}
             >
               <FaArrowLeft className="me-2" /> Voltar
             </Button>

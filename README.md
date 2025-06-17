@@ -24,8 +24,8 @@
 - Swagger para documentação da API
 - Assíncrono/Await com Task no ciclo de vida dos pedidos
 
-### 🎨 Frontend (React + Bootstrap)
-- React com Vite
+### 🎨 Frontend (Next.js + Bootstrap)
+ - Next.js (React)
 - Bootstrap 5 + React Bootstrap
 - SignalR Client (WebSocket auto reconectável)
 - JavaScript ES6+
@@ -47,7 +47,7 @@ KitchenSync
 │   ├── KitchenSync.Application    → Casos de uso e DTOs
 │   ├── KitchenSync.Domain         → Entidades, Enums e Regras de Domínio
 │   └── KitchenSync.Infrastructure → DbContext, Repositórios e Migrations
-├── frontend                       → React App (telas e componentes visuais)
+├── frontend                       → Next.js app (telas e componentes visuais)
 ```
 
 ---

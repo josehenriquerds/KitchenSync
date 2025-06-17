@@ -4,7 +4,7 @@ import { HubConnectionBuilder } from '@microsoft/signalr';
 import ProdutoCard from '../components/ProdutoCard';
 import { motion } from 'framer-motion';
 import { FaFish, FaArrowLeft } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/router';
 
 function PedidoRapido() {
   const [produtos, setProdutos] = useState([]);
@@ -12,7 +12,7 @@ function PedidoRapido() {
   const [showToast, setShowToast] = useState(false);
   const [toastMsg, setToastMsg] = useState('');
   const connectionRef = useRef(null);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(() => {
     fetch('https://localhost:5000/api/produto')
@@ -98,7 +98,7 @@ function PedidoRapido() {
         <Button
           variant="light"
           className="d-flex align-items-center"
-          onClick={() => navigate('/')}
+          onClick={() => router.push('/')}
         >
           <FaArrowLeft className="me-2" /> Voltar
         </Button>

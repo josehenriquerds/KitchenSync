@@ -2,7 +2,6 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { FaClock } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import "./PedidoCard.css";
 
 const PedidoCard = ({ pedido, onConcluir }) => {
   const { tempoRestante, prioridade, status, finalizado, produto } = pedido;

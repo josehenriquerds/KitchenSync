@@ -15,20 +15,33 @@ namespace KitchenSync.API.Services
         public ProdutoFileService(IWebHostEnvironment env)
         {
             _filePath = Path.Combine(env.ContentRootPath, "produtos.json");
-            if (File.Exists(_filePath))
-            {
-                var json = File.ReadAllText(_filePath);
-                _produtos = JsonSerializer.Deserialize<List<Produto>>(json) ?? new List<Produto>();
-            }
-            else
-            {
-                _produtos = new List<Produto>();
-            }
+            _produtos = new List<Produto>();
+            Reload();
         }
 
-        public IEnumerable<Produto> GetAll() => _produtos;
+        private void Reload()
+        {
+            if (!File.Exists(_filePath))
+                return;
 
-        public Produto GetById(int id) => _produtos.FirstOrDefault(p => p.Id == id);
+            var json = File.ReadAllText(_filePath);
+            var fromFile = JsonSerializer.Deserialize<List<Produto>>(json) ?? new List<Produto>();
+
+            _produtos.Clear();
+            _produtos.AddRange(fromFile);
+        }
+
+        public IEnumerable<Produto> GetAll()
+        {
+            Reload();
+            return _produtos;
+        }
+
+        public Produto GetById(int id)
+        {
+            Reload();
+            return _produtos.FirstOrDefault(p => p.Id == id);
+        }
 
         private void Save()
         {

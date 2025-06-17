@@ -4,7 +4,7 @@ function App() {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    fetch('https://localhost:5000/api/produto')
+    fetch('/produtos.json')
       .then(res => res.json())
       .then(setProdutos)
       .catch(err => console.error('Erro ao carregar produtos', err));

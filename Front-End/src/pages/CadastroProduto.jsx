@@ -15,7 +15,7 @@ const CadastroProduto = () => {
 
   const carregarProdutos = async () => {
     try {
-      const res = await fetch("https://localhost:5000/api/produto");
+      const res = await fetch("/produtos.json");
       const data = await res.json();
       setProdutos(data);
     } catch (err) {

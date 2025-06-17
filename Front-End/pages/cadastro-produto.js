@@ -4,10 +4,10 @@ import { Button, Container, Form, Card, Badge, Row, Col } from "react-bootstrap"
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import { FaTrash, FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 
 const CadastroProduto = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [nome, setNome] = useState("");
   const [tempoPreparo, setTempoPreparo] = useState("");
   const [prioridade, setPrioridade] = useState("3");
@@ -98,7 +98,7 @@ const CadastroProduto = () => {
         <Button
           variant="light"
           className="d-flex align-items-center"
-          onClick={() => navigate("/")}
+          onClick={() => router.push("/")}
         >
           <FaArrowLeft className="me-2" /> Voltar
         </Button>

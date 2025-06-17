@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 import { Button, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FaUtensils, FaListAlt, FaPlusCircle } from "react-icons/fa";
 
 const TelaInicial = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const botoes = [
     {
@@ -61,7 +61,7 @@ const TelaInicial = () => {
                 fontWeight: "500",
                 letterSpacing: "0.5px",
               }}
-              onClick={() => navigate(botao.rota)}
+              onClick={() => router.push(botao.rota)}
             >
               {botao.icon} <span>{botao.label}</span>
             </Button>

@@ -1,0 +1,64 @@
+.pedido-card {
+    transition: transform 0.2s ease;
+  }
+  
+  .pedido-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .titulo-produto {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .info-extra {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+  
+  .barra-progresso-bg {
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 12px;
+    background-color: #ffffff44;
+    overflow: hidden;
+  }
+  
+  .barra-progresso {
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  
+  .overlay-finalizado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .titulo{
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+  }
+  .nome-destaque {
+    font-size: 2rem; /* ou 32px */
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    color: #0e0e0e;
+  }
+  

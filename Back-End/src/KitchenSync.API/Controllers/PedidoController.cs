@@ -1,10 +1,12 @@
-﻿using KitchenSync.API.Hubs;
+using KitchenSync.API.Hubs;
 using KitchenSync.Application.DTOs;
 using KitchenSync.Application.DTOS;
 using KitchenSync.Domain.Entities;
-using KitchenSync.Infrastructure.Data;
+using KitchenSync.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using System.Linq;
+
 
 namespace KitchenSync.API.Controllers
 {
@@ -13,20 +15,23 @@ namespace KitchenSync.API.Controllers
     public class PedidoController : ControllerBase
     {
         private readonly IHubContext<PedidoHub> _hubContext;
-        private readonly KitchenSyncDbContext _context;
+        private readonly ProdutoFileService _produtoService;
+        private readonly PedidoInMemoryService _pedidoService;
 
         public PedidoController(
             IHubContext<PedidoHub> hubContext,
-            KitchenSyncDbContext context)
+            ProdutoFileService produtoService,
+            PedidoInMemoryService pedidoService)
         {
             _hubContext = hubContext;
-            _context = context;
+            _produtoService = produtoService;
+            _pedidoService = pedidoService;
         }
 
         [HttpPost]
         public async Task<IActionResult> CriarPedido([FromBody] CriarPedidoDto dto)
         {
-            var produto = await _context.Produtos.FindAsync(dto.ProdutoId);
+            var produto = _produtoService.GetById(dto.ProdutoId);
             if (produto == null)
                 return NotFound("Produto não encontrado.");
 
@@ -42,19 +47,10 @@ namespace KitchenSync.API.Controllers
                 Status = 0
             };
 
+            _pedidoService.Add(pedido);
+
             var retorno = PedidoDto.FromEntity(pedido);
             await _hubContext.Clients.All.SendAsync("NovoPedido", retorno);
-
-            // Registra pedido analítico no banco
-            var analitico = new PedidoAnalitico
-            {
-                ProdutoId = produto.Id,
-                Quantidade = dto.Quantidade,
-                DataHora = DateTime.UtcNow
-            };
-
-            _context.PedidosAnaliticos.Add(analitico);
-            await _context.SaveChangesAsync();
 
             return Ok(retorno);
         }
@@ -73,10 +69,10 @@ namespace KitchenSync.API.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PedidoDto>>> GetPedidos()
+        public ActionResult<IEnumerable<PedidoDto>> GetPedidos()
         {
-            // Endpoint opcional para manter compatibilidade
-            return Ok(new List<PedidoDto>());
+            var pedidos = _pedidoService.GetAll().Select(PedidoDto.FromEntity);
+            return Ok(pedidos);
         }
     }
 }

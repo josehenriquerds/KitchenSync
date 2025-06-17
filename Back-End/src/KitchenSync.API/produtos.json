@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nome": "Arroz",
+    "descricao": "Porção de arroz",
+    "tempoPreparo": 5,
+    "categoria": "Acompanhamento",
+    "disponivel": true
+  },
+  {
+    "id": 2,
+    "nome": "Feijão",
+    "descricao": "Feijão temperado",
+    "tempoPreparo": 10,
+    "categoria": "Acompanhamento",
+    "disponivel": true
+  }
+]

@@ -15,9 +15,8 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-### 🔧 Backend (.NET 8 - ASP.NET Core)
+-### 🔧 Backend (.NET 8 - ASP.NET Core)
 - ASP.NET Core 8 (REST API)
-- Entity Framework Core (Code-First / SQL Server)
 - SignalR (comunicação em tempo real)
 - Arquitetura Domain-Driven Design (DDD)
 - Princípios SOLID
@@ -106,16 +105,17 @@ KitchenSync
 ### Requisitos:
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
 - [Node.js 18+](https://nodejs.org/)
-- SQL Server (ou LocalDB)
 - Git
 
 ### 🔧 Backend
 ```bash
 cd src/KitchenSync.API
-dotnet ef database update
 dotnet run
 ```
 > A API estará disponível em: `https://localhost:5000`
+
+### Dados de Produtos
+Os produtos cadastrados ficam no arquivo `src/KitchenSync.API/produtos.json`. Edite esse arquivo para adicionar ou alterar itens sem depender de banco de dados.
 
 ### 🎯 Frontend
 ```bash

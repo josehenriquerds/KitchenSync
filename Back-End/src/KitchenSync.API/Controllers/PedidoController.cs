@@ -31,6 +31,7 @@ namespace KitchenSync.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CriarPedido([FromBody] CriarPedidoDto dto)
         {
+            // Consulta o produto diretamente do arquivo JSON
             var produto = _produtoService.GetById(dto.ProdutoId);
             if (produto == null)
                 return NotFound("Produto não encontrado.");
